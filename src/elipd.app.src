@@ -1,0 +1,16 @@
+{application, elipd,
+ [
+  {description, "elipd"},
+  {vsn, "1"},
+  {modules, [
+             elipd,
+             elipd_app,
+             elipd_sup
+            ]},
+  {mod,{elipd_app,[]}},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]}
+ ]}.
