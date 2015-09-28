@@ -1,13 +1,13 @@
-{application, elipd,
+{application, elipsrv,
  [
-  {description, "elipd"},
+  {description, "elipsrv"},
   {vsn, "1"},
   {modules, [
-             elipd,
-             elipd_app,
-             elipd_sup
+             elipsrv,
+             elipsrv_app,
+             elipsrv_sup
             ]},
-  {mod,{elipd_app,[]}},
+  {mod,{elipsrv_app,[]}},
   {registered, []},
   {applications, [
                   kernel,

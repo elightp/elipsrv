@@ -1,6 +1,6 @@
 %% @doc Contains functions used to control the application
 
--module(elipd).
+-module(elipsrv).
 
 -export([start/0]).
 -export([stop/1]).

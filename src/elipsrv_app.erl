@@ -1,7 +1,7 @@
 %% @doc Callbacks for the application.
 %% Contains application start and stop functions.
 
--module(elipd_app).
+-module(elipsrv_app).
 -behaviour(application).
 
 %% API.
@@ -16,7 +16,7 @@ start(Type, Args) ->
 	error_logger:info_msg("[~p]: Start type: ~p Start Args = ~p~n", [?MODULE, Type, Args]),
 
 	%% Start server main supervisor
-    case elipd_sup:start_link() of
+    case elipsrv_sup:start_link() of
 		{ok, Pid} ->
 	    	{ok, Pid};
 		Error ->
